@@ -1,5 +1,5 @@
 # CodeWars
-Welcome to the coding competition! This is a 2-player game where each team will code their own strategy to deploy robots, gather resources, and attack the opponent's base. The game is played on a 40x40 grid, and the objective is to outmaneuver and outwit the other team to secure victory.
+This is a 2-player game where each team will code their own strategy to deploy robots, gather resources, and attack the opponent's base. The game is played on a 40x40 grid, and the objective is to outmaneuver and outwit the other team to secure victory.
 
 ## The Objective
 The objective of the game is to eliminate the opponent's Elixir supply or have a higher average Elixir count than the opponent after 1500 timeframes.
@@ -11,12 +11,14 @@ The objective of the game is to eliminate the opponent's Elixir supply or have a
 
 ## Game Rules
 
-*The grid consists of Elixir and Virus at random locations. Elixir supply is not renewed, but Virus will be renewed after a specified number of turns.
+* The grid consists of Elixir and Virus at random locations. Elixir supply is not renewed, but Virus will be renewed after a specified number of turns.
 
-*Robots are deployed from the bases and follow the pre-coded scripts submitted by the teams. Robots can collect both Elixir and Virus while wandering the grid.
+* Robots are deployed from the bases and follow the pre-coded scripts submitted by the teams. Robots can collect both Elixir and Virus while wandering the grid.
 
-*Each team can deploy Virus on enemy robots or bases, which will reduce the target's Elixir count.
+* Each team can deploy Virus on enemy robots or bases, which will reduce the target's Elixir count.
 
-*The game ends if any team's Elixir supply reaches zero, in which case the opposing team wins!
+* The game ends if any team's Elixir supply reaches zero, in which case the opposing team wins!
 
-*If 1500 timeframes pass, the winner will be determined based on the moving average of each team's Elixir count.
+* A team can also win of their the opponent teams base is infiltrated and the opponent's base has no elixr left.
+
+* If 1500 timeframes pass, the winner will be determined based on the moving average of each team's Elixir count.
