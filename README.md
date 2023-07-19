@@ -1,19 +1,21 @@
-Each run of the game will be a contest between two teams, red and blue, which shall signify the code/script of two teams which actually participate in our contest.
+#CodeWars
+Welcome to the coding competition! This is a 2-player game where each team will code their own strategy to deploy robots, gather resources, and attack the opponent's base. The game is played on a 40x40 grid, and the objective is to outmaneuver and outwit the other team to secure victory.
 
-There are two key commodities in the game : Virus and Elixir
+#The Objective
+The objective of the game is to eliminate the opponent's Elixir supply or have a higher average Elixir count than the opponent after 1500 timeframes.
 
-The Base has an initial supply of Elixir, using which it could create more robots (each one of which will run the Robot’s part of the script the team submits), but no virus.
+#Key Commodities
+**Elixir**: Each team's base starts with an initial supply of Elixir, which is used to create robots. Robots can collect Elixir from the grid, and their individual Elixir counts are independent.
 
-The Screen/Canvas will be represented by a 40 by 40 (mostly!) grid, which will have Elixir stored on some of its locations and Virus on others.
+**Virus**: The grid contains both Elixir and Virus. Teams can deploy Virus on enemy robots or bases, reducing their Elixir in a 1:1 ratio. Virus can be collected and stored at the base.
 
-The Virus shall be renewed after a said number of turns but not the Elixir.
+#Game Rules
+*The grid consists of Elixir and Virus at random locations. Elixir supply is not renewed, but Virus will be renewed after a specified number of turns.
 
-The Robots created by the base could wander around the map, collecting Virus & Elixir, and discovering the other team’s base, so that they could **attack** it.
+*Robots are deployed from the bases and follow the pre-coded scripts submitted by the teams. Robots can collect both Elixir and Virus while wandering the grid.
 
-The Elixir any robot acquires is its own, whereas any virus it acquires belongs to its team, and is stored at the base, but can be deployed by any of its robots in whatever amount they see fit.
+*Each team can deploy Virus on enemy robots or bases, which will reduce the target's Elixir count.
 
-Whenever Virus is deployed on any enemy robot/base, it reduces its Elixir in a 1:1 ratio.
+*The game ends if any team's Elixir supply reaches zero, in which case the opposing team wins!
 
-The Game ends if any particular team has no elixir left (in which case the other team wins!)
-
-or if 1500 timeframes have passed in which case, we’ll take the moving average of the elixir of both the teams in order to determine the winner.
+*If 1500 timeframes pass, the winner will be determined based on the moving average of each team's Elixir count.
