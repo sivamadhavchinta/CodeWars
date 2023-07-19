@@ -206,7 +206,7 @@ class Game():
 
     def create_map(self):
         """Take info about __collectibles and create the map"""
-        im = cv2.imread("logo.jpeg", cv2.IMREAD_GRAYSCALE)
+        im = cv2.imread("test_img.jpg", cv2.IMREAD_GRAYSCALE)
         im = cv2.resize(im, (40,40))
         im = np.array(im)
         im = im - np.full((40,40), 127)
