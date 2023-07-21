@@ -22,3 +22,6 @@ The objective of the game is to eliminate the opponent's Elixir supply or have a
 * A player can also win of their the opponent players base is infiltrated and the opponent's base has no elixr left.
 
 * If 1500 timeframes pass, the winner will be determined based on the moving average of each player's Elixir count.
+
+
+## Run main.py to see the game
